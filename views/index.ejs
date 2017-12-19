@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Compressor</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title"> URL Shortening Microservice</h1>
+		<div class="info-holder">
+			<div class="user-stories">
+				<h3 class="us-title">User Stories</h3>
+				<ul class="us-list">
+					<li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+					<li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+					<li>When I visit that shortened URL, it will redirect me to my original link.</li>
+				</ul>
+			</div>
+			<div class="create">
+				<h3 class="create-headline">
+					Example usage to create a shortened URL
+				</h3>
+				<ul>
+					<li>localhost:8080/new/https://www.freecodecamp.com</li>
+					<li>localhost:8080/new/https://www.google.com</li>
+				</ul>
+			</div>
+			<div class="output">
+				<h3>Example output</h3>
+				<ul>
+					<li>{"original_url": "https://www.google.com", "short_url": "localhost:8080/url/3"}</li>
+				</ul>
+			</div>
+			<div class="result">
+				<h3>Short URL will redirect to:</h3>
+				<ul>
+					<li>https://www.google.com</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
